@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- FONTE OPEN SANS - GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+
+	<link rel="shortcut icon" href="./img/energia-solar.png" type="image/x-icon"/>
+
+	<link rel="stylesheet" href="./css/style.css"/>
+	<script src="./js/script.js"></script>
+
+	<title>Previsão do Tempo JS</title>
+</head>
+<body class="body">
+
+	<div class="container-box">
+
+		<h1>Previsão do tempo</h1>
+
+		<div class="container-busca">
+			<input type="text" id="input-cidade" placeholder="Digite o nome da cidade"/>
+			<button id="busca-cidade-btn" onclick="buscarCidade()">
+				<img class="img-busca" src="./img/busca.png" alt="Busca" />
+			</button>
+		</div>
+
+		<h2 id="temp-city"></h2>
+		<p class="graus"></p>
+
+		<div class="previsao-tempo">
+			<img id="img-temp"/>
+			<p id="previsao"></p>
+		</div>
+
+		<p class="umidade"></p>
+	</div>
+	
+</body>
+</html>
